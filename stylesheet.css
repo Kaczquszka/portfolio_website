@@ -46,12 +46,21 @@ div.title h2{
     width: 450px;
     border-radius: 5%;
 }
+@media only screen and (max-width: 600px){
+    div.title h1{
+        font-size: 1.5rem;
+    }
+    div.title h2{
+        font-size: 1rem;
+    }
+}
 @media only screen and (max-width: 800px){
     .my-photo{
         height: 200px;
         width:150px;
     }
     .title{
+        grid-template-columns: 4fr 1fr 150px 1fr;
         grid-template-rows: 1fr 100px 100px 1fr;
         height: 60vh;
     }
